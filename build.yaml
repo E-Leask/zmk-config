@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: fourier_left
-  - board: nice_nano_v2
-    shield: fourier_right
+    shield: hipfire_left
+#  - board: nice_nano_v2
+#    shield: hipfire_right

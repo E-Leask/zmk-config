@@ -1,0 +1,37 @@
+#include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your overlay
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+};
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&pro_micro 9 GPIO_ACTIVE_HIGH>
+            ;
+
+        row-gpios
+            = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <1>; // Length of the "col-gpios" array
+        rows = <1>; // Length of the "row-gpios" array
+        map = <
+        //   Key 1
+            RC(0,0)
+        >;
+    };
+};

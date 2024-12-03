@@ -1,0 +1,13 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer { // Layer 0
+            // -------------------------------------
+            // |     F     |
+            bindings = <
+                &kp F
+            >;
+        };
+    };
+ };
