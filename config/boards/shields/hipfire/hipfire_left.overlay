@@ -2,8 +2,8 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0;
+        zmk,kscan = &default_kscan0;
+        zmk,matrix_transform = &default_transform;
         // Other chosen items
     };
 };
