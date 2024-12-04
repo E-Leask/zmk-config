@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "hipfire-layouts.dtsi"
 
 //Use this file  to reduce duplication between overlays
 
