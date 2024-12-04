@@ -14,8 +14,8 @@
     col-offset = <3>;
 };
 
-// Bluetooth communication configuration
-ble_radio_ctrl: ble_radio_ctrl {
-    compatible = "zmk,split-bluetooth";
-    status = "okay";
-};
+//// Bluetooth communication configuration
+//ble_radio_ctrl: ble_radio_ctrl {
+//    compatible = "zmk,split-bluetooth";
+//    status = "okay";
+//};
