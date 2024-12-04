@@ -11,11 +11,5 @@
 
 
     &default_transform { // Offset of 3 because the left side has 3 columns
-    col-offset = <3>;
+    col-offset = <1>;
 };
-
-//// Bluetooth communication configuration
-//ble_radio_ctrl: ble_radio_ctrl {
-//    compatible = "zmk,split-bluetooth";
-//    status = "okay";
-//};
