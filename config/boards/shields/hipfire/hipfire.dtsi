@@ -27,7 +27,7 @@
     //kscan property only needs to be assigned if some of your physical layouts use different kscans
     kscan = <&kscan0>;
     //POINT OF ERROR
-    transform = <&matrix_transform0>;
+    transform = <&keymap_transform0>;
 };
 
 / {
