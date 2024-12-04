@@ -20,5 +20,5 @@
 include:
   - board: nice_nano_v2
     shield: hipfire_left
-#  - board: nice_nano_v2
-#    shield: hipfire_right
+  - board: nice_nano_v2
+    shield: hipfire_right

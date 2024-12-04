@@ -1,0 +1,44 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
+//Use this file  to reduce duplication between overlays
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
+        // Other chosen items
+    };
+};
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&pro_micro 9 GPIO_ACTIVE_HIGH>
+            ;
+    };
+};
+
+&physical_layout0 {
+    //kscan property only needs to be assigned if some of your physical layouts use different kscans
+    kscan = <&kscan0>;
+    //POINT OF ERROR
+    transform = <&matrix_transform0>;
+};
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <2>;
+        rows = <2>;
+        map = <
+        //  LKey F       RKey U 
+            RC(0,0)      RC(0,1) 
+        //  LKey BL      
+            RC(1,0)      
+        >;
+    };
+};
