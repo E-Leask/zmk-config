@@ -7,13 +7,12 @@
         compatible = "zmk,keymap";
 
         default_layer { // Layer 0
-            // -------------------------------------
-            // |     F     |     U     |
-            // |     BlC
             bindings = <
-                &kp F   &kp U
-                &bt BT_SEL 0
-
+               &kp ESC     &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6     &kp 7 &kp 8 &kp 9 &kp 0 &kp - &kp = 
+               &kp TAB     &kp q &kp w &kp e &kp r &kp t &trans     &kp y &kp u &kp i &kp o &kp p &kp [ &kp ]
+               &trans      &kp a &kp s &kp d &kp f &kp g &trans     &kp h &kp j &kp k &kp l &kp ; &kp ' 
+               &kp LSHIFT  &kp z &kp x &kp c &kp v &kp b &trans     &kp n &kp m &kp , &kp . &kp / 
+               &kp LCTRL
             >;
         };
     };
