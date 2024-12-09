@@ -8,11 +8,21 @@
 
         default_layer { // Layer 0
             bindings = <
-               &kp ESC     &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6     &kp 7 &kp 8 &kp 9 &kp 0 &kp - &kp = 
-               &kp TAB     &kp q &kp w &kp e &kp r &kp t &trans     &kp y &kp u &kp i &kp o &kp p &kp [ &kp ]
-               &trans      &kp a &kp s &kp d &kp f &kp g &trans     &kp h &kp j &kp k &kp l &kp ; &kp ' 
-               &kp LSHIFT  &kp z &kp x &kp c &kp v &kp b &trans     &kp n &kp m &kp , &kp . &kp / 
-               &kp LCTRL
+               &kp ESC    &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &kp N6            &kp N7    &kp N8  &kp N9  &kp N0  &kp MINUS   &kp MINUS &kp EQUAL 
+               &kp TAB    &kp Q     &kp W   &kp E   &kp R   &kp T   &kp LBKT          &kp Y     &kp U   &kp I   &kp O   &kp P       &kp LBKT &kp RBKT
+               &kp CAPS   &kp A     &kp S   &kp D   &kp F   &kp G   &kp RBKT          &kp H     &kp J   &kp K   &kp L   &kp SEMICOLON &kp SINGLE_QUOTE &kp ENTER
+               &trans     &kp LSHIFT &kp Z  &kp X   &kp C   &kp V   &kp B             &kp B     &kp N   &kp M   &kp COMMA &kp PERIOD &kp SLASH &kp RSHIFT
+               &kp LCTRL  &kp LWIN  &kp LALT &mo 1  &kp SPACE &kp SPACE &kp SPACE     &kp HOME  &kp END &kp DEL &kp RALT &kp RWIN   &mo 1   &kp RCTRL 
+            >;
+        };
+        FN { // Layer 1
+            display-name = "Fn";
+            bindings = <
+                &trans &trans &trans &trans &trans &trans &trans    &trans      &trans  &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans    &kp UNDERSCORE   &kp N7  &kp N8  &kp N9 &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans    &kp EQUAL   &kp N4  &kp N5 &kp N6 &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans    &kp PERIOD  &kp N0  &kp N1 &kp N2 &kp N3 &kp UP &trans
+                &trans &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &kp LEFT &kp DOWN &kp RIGHT
             >;
         };
     };
