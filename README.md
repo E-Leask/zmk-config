@@ -12,8 +12,8 @@ For reference this guide will show the development of a split bluetooth keyboard
 ## Bill of Materials(Aliexpress)
 |Quantity| Part | Cost(CAD) |
 |---|---|---|
-|110|110x Outemu Half Height Switches| 30$ |
-|2|2x ProMicro NRF52840 | 10$ |
+|110| Outemu Half Height Switches| 30$ |
+|2| ProMicro NRF52840 | 10$ |
 |2|Li-Ion Battery | 10$ |
 |100|1N5252B Diode|5$|
 |1|22 AWG Copper Wire|5$|
