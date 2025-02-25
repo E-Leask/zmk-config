@@ -6,6 +6,7 @@ This guide covers the following keyboard development stages:
 - Shell 
 - Wiring(Solderless)
 - Firmware
+  
 This will include details on what I found to be the fastest way to go from a keyboard idea to a functioning prototype and hopefully save you time in your development process. This project focuses on simple CAD Design, minimal soldering, and flexibility to experiment layout changes at any point in the design process. 
 For reference this guide will show the development of a split bluetooth keyboard with a custom layout.
 ## Bill of Materials(Aliexpress)
