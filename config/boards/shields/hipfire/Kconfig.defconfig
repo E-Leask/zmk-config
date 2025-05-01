@@ -1,4 +1,4 @@
-if SHIELD_HIPFIRE_RIGHT
+if SHIELD_HIPFIRE_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "hipfire"
