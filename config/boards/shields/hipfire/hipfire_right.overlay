@@ -4,6 +4,13 @@
     &default_transform { // Offset of 3 because the left side has 3 columns
     col-offset = <0>;
     };
+    
+&i2c0 {
+    mxt112s@4A {
+        compatible = "microchip,mxt112s";
+        reg = <0x4A>;
+    };
+};
 
     &kscan0 {
 	          col-gpios
