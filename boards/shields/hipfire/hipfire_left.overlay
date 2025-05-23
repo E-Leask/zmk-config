@@ -1,9 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your overlay
 #include "hipfire.dtsi"
 &i2c0 {
-    mxt112s@4A {
+    mxt112s@4a {
         compatible = "microchip,mxt112s";
-        reg = <0x4A>;
+        reg = <0x4a>;
     };
 };
 
