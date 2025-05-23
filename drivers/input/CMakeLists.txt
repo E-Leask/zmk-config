@@ -1,0 +1,3 @@
+zephyr_library_amend()
+
+zephyr_library_sources_ifdef(CONFIG_INPUT_MAXTOUCH_MXT112S input_mxt112s.c)
