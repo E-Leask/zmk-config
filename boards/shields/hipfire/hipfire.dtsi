@@ -25,6 +25,12 @@
     transform = <&default_transform>;
 };
 
+&pinnacle {
+    compatible = "cirque,pinnacle";
+    irq-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+    reset-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
+};
+
 / {
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
