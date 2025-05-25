@@ -9,31 +9,21 @@
         zmk,matrix_transform = &default_transform;
         // Other chosen items
     };
-};
 
-/ {
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
     };
-};
 
-&physical_layout0 {
-    //kscan property only needs to be assigned if some of your physical layouts use different kscans
-    kscan = <&kscan0>;
-    transform = <&default_transform>;
-};
-
-pinnacle: pinnacle {
-    compatible = "cirque,pinnacle";
-    reg = <0>; // or the correct I2C/SPI address
-    irq-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
-    reset-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
-};
+    pinnacle: pinnacle {
+        compatible = "cirque,pinnacle";
+        reg = <0>; // or the correct I2C/SPI address
+        irq-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+        reset-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
+    };
 
 
-/ {
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <9>;
@@ -46,4 +36,9 @@ pinnacle: pinnacle {
             RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8)
         >;
     };
+};
+&physical_layout0 {
+    //kscan property only needs to be assigned if some of your physical layouts use different kscans
+    kscan = <&kscan0>;
+    transform = <&default_transform>;
 };
