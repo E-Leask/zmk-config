@@ -18,8 +18,7 @@
 
     pinnacle: pinnacle@0 {
         compatible = "cirque,pinnacle";
-        size-cells = <0>;
-        reg = <0>; // or the correct I2C/SPI address
+        //reg = <0 1>; // or the correct I2C/SPI address
         dr-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>; // Data ready pin for the trackpad
     };
 
