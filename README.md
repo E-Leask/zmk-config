@@ -89,7 +89,7 @@ The only soldering required is to solder wires to the rows for connecting to the
 ![image](https://github.com/user-attachments/assets/e6e06d50-6d43-4ac6-a3d7-51484a6cdc1a)
 
 ## Hindsight
-Alternatively, you could try to connect to the rows at the row ends. Benefit is better adjustability in the future without redoing the rows, but you run the risk of some issues getting the wires out. Replace the row wiring is very simple so i went with the soldering points that were easiest to me.
+Alternatively, you could try to connect to the rows at the row ends. Benefit is better adjustability in the future without redoing the rows, but you run the risk of some issues getting the wires out. Replace the row wiring is very simple so i went with the soldering points that were easiest to me. 
 
 ### Breadboard
 Getting into the breadboard I should mention the microcontroller used, the ProMicro NRF52840. It's cheap, supports bluetooth, and is compatible with Nice! Nano V2.0 in the ZMK Firmware
@@ -103,7 +103,8 @@ When making a config from scratch start simple, and add functionality piece by p
 
 ## Conclusion
 Future development could include encoders and mouse control using the remaining space on the breadboard or replacing a switch.
-3D Printed keycaps are not recommended. The print bed texture is very rough on your hands and is not a great typing experience. 
+3D Printed keycaps are not recommended. The print bed texture is very rough on your hands and is not a great typing experience. If you don't care about the look some pbt keycap sets are availabe for 10-15$ on amazon so its worthing the investment while prototyping.
+
 
 
 
